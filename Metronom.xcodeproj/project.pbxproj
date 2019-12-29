@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4588A0E23ABD7E600B5FC47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4588A0D23ABD7E600B5FC47 /* AppDelegate.swift */; };
+		C4588A1023ABD7E600B5FC47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4588A0F23ABD7E600B5FC47 /* SceneDelegate.swift */; };
+		C4588A1223ABD7E700B5FC47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4588A1123ABD7E600B5FC47 /* ViewController.swift */; };
+		C4588A1523ABD7E700B5FC47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4588A1323ABD7E700B5FC47 /* Main.storyboard */; };
+		C4588A1823ABD7E700B5FC47 /* Metronom.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4588A1623ABD7E700B5FC47 /* Metronom.xcdatamodeld */; };
+		C4588A1A23ABD7EC00B5FC47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4588A1923ABD7EC00B5FC47 /* Assets.xcassets */; };
+		C4588A1D23ABD7EC00B5FC47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4588A1B23ABD7EC00B5FC47 /* LaunchScreen.storyboard */; };
+		CE73EFEE23B7E82F009773A2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CE73EFED23B7E82F009773A2 /* Podfile */; };
+		CEC2B60D23B93C7A009D75B9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CEC2B60C23B93C7A009D75B9 /* .gitignore */; };
+		CED9EE5623B2AF6E0040A938 /* SlideStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED9EE5523B2AF6E0040A938 /* SlideStepper.swift */; };
+		CED9EE5B23B54A040040A938 /* SFProText-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CED9EE5923B54A040040A938 /* SFProText-Semibold.otf */; };
+		CED9EE5E23B54DD40040A938 /* SFProText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CED9EE5D23B54DD40040A938 /* SFProText-Medium.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		23C18D29C4ACF639B0F64497 /* Pods-Metronom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metronom.release.xcconfig"; path = "Pods/Target Support Files/Pods-Metronom/Pods-Metronom.release.xcconfig"; sourceTree = "<group>"; };
+		76FCAD79901A334CA45AC80D /* Pods-Metronom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metronom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Metronom/Pods-Metronom.debug.xcconfig"; sourceTree = "<group>"; };
+		C4588A0A23ABD7E600B5FC47 /* Metronom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metronom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4588A0D23ABD7E600B5FC47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4588A0F23ABD7E600B5FC47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C4588A1123ABD7E600B5FC47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4588A1423ABD7E700B5FC47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4588A1723ABD7E700B5FC47 /* Metronom.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Metronom.xcdatamodel; sourceTree = "<group>"; };
+		C4588A1923ABD7EC00B5FC47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Metronom/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		C4588A1C23ABD7EC00B5FC47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4588A1E23ABD7EC00B5FC47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE73EFED23B7E82F009773A2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		CEC2B60C23B93C7A009D75B9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		CED9EE5523B2AF6E0040A938 /* SlideStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideStepper.swift; sourceTree = "<group>"; };
+		CED9EE5923B54A040040A938 /* SFProText-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Semibold.otf"; sourceTree = "<group>"; };
+		CED9EE5D23B54DD40040A938 /* SFProText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Medium.otf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4588A0723ABD7E600B5FC47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4588A0123ABD7E600B5FC47 = {
+			isa = PBXGroup;
+			children = (
+				CEC2B60C23B93C7A009D75B9 /* .gitignore */,
+				CE73EFED23B7E82F009773A2 /* Podfile */,
+				C4588A0C23ABD7E600B5FC47 /* Metronom */,
+				C4588A0B23ABD7E600B5FC47 /* Products */,
+				EDBBB5528E856D2F91AC2890 /* Pods */,
+				FCD4A045D3728D95D477C704 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C4588A0B23ABD7E600B5FC47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4588A0A23ABD7E600B5FC47 /* Metronom.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4588A0C23ABD7E600B5FC47 /* Metronom */ = {
+			isa = PBXGroup;
+			children = (
+				CED9EE5823B5499A0040A938 /* fonts */,
+				C4588A0D23ABD7E600B5FC47 /* AppDelegate.swift */,
+				C4588A0F23ABD7E600B5FC47 /* SceneDelegate.swift */,
+				C4588A1123ABD7E600B5FC47 /* ViewController.swift */,
+				C4588A1323ABD7E700B5FC47 /* Main.storyboard */,
+				C4588A1923ABD7EC00B5FC47 /* Assets.xcassets */,
+				C4588A1B23ABD7EC00B5FC47 /* LaunchScreen.storyboard */,
+				C4588A1E23ABD7EC00B5FC47 /* Info.plist */,
+				C4588A1623ABD7E700B5FC47 /* Metronom.xcdatamodeld */,
+				CED9EE5523B2AF6E0040A938 /* SlideStepper.swift */,
+			);
+			path = Metronom;
+			sourceTree = "<group>";
+		};
+		CED9EE5823B5499A0040A938 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CED9EE5D23B54DD40040A938 /* SFProText-Medium.otf */,
+				CED9EE5923B54A040040A938 /* SFProText-Semibold.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		EDBBB5528E856D2F91AC2890 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76FCAD79901A334CA45AC80D /* Pods-Metronom.debug.xcconfig */,
+				23C18D29C4ACF639B0F64497 /* Pods-Metronom.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FCD4A045D3728D95D477C704 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4588A0923ABD7E600B5FC47 /* Metronom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4588A2123ABD7EC00B5FC47 /* Build configuration list for PBXNativeTarget "Metronom" */;
+			buildPhases = (
+				B39CCED6383E01DDFFB44592 /* [CP] Check Pods Manifest.lock */,
+				C4588A0623ABD7E600B5FC47 /* Sources */,
+				C4588A0723ABD7E600B5FC47 /* Frameworks */,
+				C4588A0823ABD7E600B5FC47 /* Resources */,
+				A85D5D455B072FA13664E7FF /* [CP] Embed Pods Frameworks */,
+				78B25DD4FF04C105EC2D814F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Metronom;
+			productName = Metronom;
+			productReference = C4588A0A23ABD7E600B5FC47 /* Metronom.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4588A0223ABD7E600B5FC47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Ширшов Александр";
+				TargetAttributes = {
+					C4588A0923ABD7E600B5FC47 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = C4588A0523ABD7E600B5FC47 /* Build configuration list for PBXProject "Metronom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4588A0123ABD7E600B5FC47;
+			productRefGroup = C4588A0B23ABD7E600B5FC47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4588A0923ABD7E600B5FC47 /* Metronom */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4588A0823ABD7E600B5FC47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE73EFEE23B7E82F009773A2 /* Podfile in Resources */,
+				CEC2B60D23B93C7A009D75B9 /* .gitignore in Resources */,
+				CED9EE5B23B54A040040A938 /* SFProText-Semibold.otf in Resources */,
+				C4588A1D23ABD7EC00B5FC47 /* LaunchScreen.storyboard in Resources */,
+				C4588A1A23ABD7EC00B5FC47 /* Assets.xcassets in Resources */,
+				CED9EE5E23B54DD40040A938 /* SFProText-Medium.otf in Resources */,
+				C4588A1523ABD7E700B5FC47 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78B25DD4FF04C105EC2D814F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Metronom/Pods-Metronom-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A85D5D455B072FA13664E7FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Metronom/Pods-Metronom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B39CCED6383E01DDFFB44592 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Metronom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4588A0623ABD7E600B5FC47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4588A1223ABD7E700B5FC47 /* ViewController.swift in Sources */,
+				CED9EE5623B2AF6E0040A938 /* SlideStepper.swift in Sources */,
+				C4588A0E23ABD7E600B5FC47 /* AppDelegate.swift in Sources */,
+				C4588A1823ABD7E700B5FC47 /* Metronom.xcdatamodeld in Sources */,
+				C4588A1023ABD7E600B5FC47 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C4588A1323ABD7E700B5FC47 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4588A1423ABD7E700B5FC47 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4588A1B23ABD7EC00B5FC47 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4588A1C23ABD7EC00B5FC47 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4588A1F23ABD7EC00B5FC47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4588A2023ABD7EC00B5FC47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4588A2223ABD7EC00B5FC47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76FCAD79901A334CA45AC80D /* Pods-Metronom.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Metronom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.shirshov;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4588A2323ABD7EC00B5FC47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23C18D29C4ACF639B0F64497 /* Pods-Metronom.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Metronom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.shirshov;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4588A0523ABD7E600B5FC47 /* Build configuration list for PBXProject "Metronom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4588A1F23ABD7EC00B5FC47 /* Debug */,
+				C4588A2023ABD7EC00B5FC47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4588A2123ABD7EC00B5FC47 /* Build configuration list for PBXNativeTarget "Metronom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4588A2223ABD7EC00B5FC47 /* Debug */,
+				C4588A2323ABD7EC00B5FC47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C4588A1623ABD7E700B5FC47 /* Metronom.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C4588A1723ABD7E700B5FC47 /* Metronom.xcdatamodel */,
+			);
+			currentVersion = C4588A1723ABD7E700B5FC47 /* Metronom.xcdatamodel */;
+			path = Metronom.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C4588A0223ABD7E600B5FC47 /* Project object */;
+}
