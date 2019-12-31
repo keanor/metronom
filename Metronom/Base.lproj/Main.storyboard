@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,63 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Metronom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 1firstHidden" highlightedImage="signal_enabledfirst" translatesAutoresizingMaskIntoConstraints="NO" id="xuW-Hj-Lar" userLabel="firstTactGrey">
-                                <rect key="frame" x="40.333333333333336" y="380" width="31.666666666666664" height="55.333333333333314"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 1secondHidden" translatesAutoresizingMaskIntoConstraints="NO" id="ZnX-wN-Leu" userLabel="secondTactGrey">
-                                <rect key="frame" x="183.66666666666666" y="370" width="8" height="57"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 1thirdHidden" translatesAutoresizingMaskIntoConstraints="NO" id="HGO-Ag-hmf" userLabel="thirdTactGrey">
-                                <rect key="frame" x="303" y="380" width="32" height="55.333333333333314"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VF9-yu-9AC" userLabel="playButton">
-                                <rect key="frame" x="123.66666666666669" y="610" width="128" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="128" id="8t0-R4-5Ov"/>
-                                    <constraint firstAttribute="height" constant="128" id="Oto-ck-IHL"/>
-                                </constraints>
-                                <state key="normal" image="Button2start"/>
-                                <connections>
-                                    <action selector="runButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="ITq-go-OBf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaH-Nd-FqY" userLabel="stopButton">
-                                <rect key="frame" x="97.666666666666686" y="594" width="180" height="180"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="Mzs-4c-PsB"/>
-                                    <constraint firstAttribute="width" constant="180" id="r7u-Lh-HEy"/>
-                                </constraints>
-                                <state key="normal" image="Button2stop"/>
-                                <connections>
-                                    <action selector="stopButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="czk-DW-bey"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signal_enabledfirst" translatesAutoresizingMaskIntoConstraints="NO" id="oC0-0K-JCb" userLabel="firstTact">
-                                <rect key="frame" x="6" y="343" width="101" height="129.33333333333337"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="101" id="B9m-Fv-VYp"/>
-                                    <constraint firstAttribute="height" constant="129.33333333333337" id="lAp-dy-ox4"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 3second" translatesAutoresizingMaskIntoConstraints="NO" id="Ljl-sp-YhQ" userLabel="secondTact">
-                                <rect key="frame" x="110" y="343" width="155" height="111"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="155" id="RTb-Kz-NbL"/>
-                                    <constraint firstAttribute="height" constant="111" id="Z3N-pa-Jmc"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 3third" translatesAutoresizingMaskIntoConstraints="NO" id="V5A-0O-Dx9" userLabel="thirdTact">
-                                <rect key="frame" x="271" y="344" width="96" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="96" id="l7R-QY-Oqw"/>
-                                    <constraint firstAttribute="height" constant="128" id="lYQ-pJ-RqM"/>
-                                </constraints>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3r-0f-PZd" customClass="SlideStepper" customModule="Metronom" customModuleProvider="target">
-                                <rect key="frame" x="40" y="60" width="100" height="142"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3r-0f-PZd" userLabel="RhythmStepper" customClass="StepperView" customModule="Metronom" customModuleProvider="target">
+                                <rect key="frame" x="40" y="16" width="100" height="142"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="142" id="BVw-X7-kuV"/>
@@ -79,8 +27,8 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="valueText" value="3/4"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sse-24-Dfs" customClass="SlideStepper" customModule="Metronom" customModuleProvider="target">
-                                <rect key="frame" x="235" y="60" width="100" height="142"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sse-24-Dfs" userLabel="SpeedStepper" customClass="StepperView" customModule="Metronom" customModuleProvider="target">
+                                <rect key="frame" x="180" y="16" width="100" height="142"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="142" id="IaJ-2b-AF8"/>
@@ -91,42 +39,28 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="valueText" value="120"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2XX-jA-pQ7" customClass="MetronomView" customModule="Metronom" customModuleProvider="target">
+                                <rect key="frame" x="40" y="258" width="240" height="270"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="2XX-jA-pQ7" firstAttribute="top" secondItem="d3r-0f-PZd" secondAttribute="bottom" constant="100" id="03p-VY-Gu9"/>
                             <constraint firstAttribute="trailing" secondItem="sse-24-Dfs" secondAttribute="trailing" constant="40" id="0ii-Lq-OO3"/>
-                            <constraint firstItem="V5A-0O-Dx9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="2" id="5pm-pm-iSX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2XX-jA-pQ7" secondAttribute="trailing" constant="40" id="70h-KZ-LL1"/>
                             <constraint firstItem="d3r-0f-PZd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="8Qg-Jw-0ux"/>
-                            <constraint firstItem="Ljl-sp-YhQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="94" id="AB1-oz-V9z"/>
                             <constraint firstItem="d3r-0f-PZd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="AZE-Gw-mXX"/>
-                            <constraint firstAttribute="trailing" secondItem="HGO-Ag-hmf" secondAttribute="trailing" constant="40" id="Awr-kZ-0Tq"/>
-                            <constraint firstItem="ZnX-wN-Leu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IX3-ze-Onm"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KaH-Nd-FqY" secondAttribute="bottom" constant="4" id="Iho-AC-iJG"/>
-                            <constraint firstItem="KaH-Nd-FqY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kxs-t1-i1D"/>
-                            <constraint firstItem="oC0-0K-JCb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="M96-57-Hep"/>
-                            <constraint firstItem="Ljl-sp-YhQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-7.5" id="NwG-cV-TSO"/>
-                            <constraint firstItem="VF9-yu-9AC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VOJ-Qr-csp"/>
-                            <constraint firstItem="oC0-0K-JCb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="Zjo-kC-nw5"/>
                             <constraint firstItem="sse-24-Dfs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="bNA-Z9-MK3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VF9-yu-9AC" secondAttribute="bottom" constant="40" id="eNU-tl-FIR"/>
-                            <constraint firstItem="xuW-Hj-Lar" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40.479999999999997" id="hjj-dk-Pbv"/>
-                            <constraint firstItem="oC0-0K-JCb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="1.6699999999999999" id="hzh-cQ-rfj"/>
-                            <constraint firstItem="Ljl-sp-YhQ" firstAttribute="leading" secondItem="oC0-0K-JCb" secondAttribute="trailing" constant="3" id="m4b-aQ-aQA"/>
-                            <constraint firstItem="ZnX-wN-Leu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-7.5" id="nfP-AF-BxB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V5A-0O-Dx9" secondAttribute="trailing" constant="8" id="ra8-Uc-MfE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ljl-sp-YhQ" secondAttribute="trailing" constant="110" id="riA-6g-vfY"/>
-                            <constraint firstItem="xuW-Hj-Lar" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="1.6699999999999999" id="yDW-kJ-byo"/>
-                            <constraint firstItem="HGO-Ag-hmf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="1.6699999999999999" id="zfD-PR-WKK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2XX-jA-pQ7" secondAttribute="bottom" constant="40" id="dB3-VC-ltM"/>
+                            <constraint firstItem="2XX-jA-pQ7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="uyO-g5-Iox"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="firstTakt" destination="oC0-0K-JCb" id="PyV-w6-2Hc"/>
-                        <outlet property="playButtonOutlet" destination="VF9-yu-9AC" id="Kmr-lO-stz"/>
-                        <outlet property="secondTakt" destination="Ljl-sp-YhQ" id="S8x-K4-etA"/>
+                        <outlet property="metronomView" destination="2XX-jA-pQ7" id="Mry-Qe-ncf"/>
+                        <outlet property="rhythmStepper" destination="d3r-0f-PZd" id="DVa-8G-PJe"/>
                         <outlet property="speedStepper" destination="sse-24-Dfs" id="ITm-WR-7mP"/>
-                        <outlet property="stopButtonOutlet" destination="KaH-Nd-FqY" id="EM9-5b-U9h"/>
-                        <outlet property="thirdTakt" destination="V5A-0O-Dx9" id="Dyf-u4-u5H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -134,14 +68,4 @@
             <point key="canvasLocation" x="136.80000000000001" y="113.79310344827587"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Button2start" width="384" height="384"/>
-        <image name="Button2stop" width="180" height="180"/>
-        <image name="Rectangle 1firstHidden" width="31.666666030883789" height="55.333332061767578"/>
-        <image name="Rectangle 1secondHidden" width="8" height="57"/>
-        <image name="Rectangle 1thirdHidden" width="32" height="55.333332061767578"/>
-        <image name="Rectangle 3second" width="60" height="109"/>
-        <image name="Rectangle 3third" width="84" height="107.33333587646484"/>
-        <image name="signal_enabledfirst" width="83.666664123535156" height="107.33333587646484"/>
-    </resources>
 </document>

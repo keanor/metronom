@@ -16,7 +16,9 @@
 		C4588A1D23ABD7EC00B5FC47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4588A1B23ABD7EC00B5FC47 /* LaunchScreen.storyboard */; };
 		CE73EFEE23B7E82F009773A2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CE73EFED23B7E82F009773A2 /* Podfile */; };
 		CEC2B60D23B93C7A009D75B9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CEC2B60C23B93C7A009D75B9 /* .gitignore */; };
-		CED9EE5623B2AF6E0040A938 /* SlideStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED9EE5523B2AF6E0040A938 /* SlideStepper.swift */; };
+		CEC2B61123BA0E5A009D75B9 /* MetronomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2B61023BA0E5A009D75B9 /* MetronomView.swift */; };
+		CEC2B61323BA1ECC009D75B9 /* TaktLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2B61223BA1ECC009D75B9 /* TaktLineView.swift */; };
+		CED9EE5623B2AF6E0040A938 /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED9EE5523B2AF6E0040A938 /* StepperView.swift */; };
 		CED9EE5B23B54A040040A938 /* SFProText-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CED9EE5923B54A040040A938 /* SFProText-Semibold.otf */; };
 		CED9EE5E23B54DD40040A938 /* SFProText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CED9EE5D23B54DD40040A938 /* SFProText-Medium.otf */; };
 /* End PBXBuildFile section */
@@ -35,7 +37,9 @@
 		C4588A1E23ABD7EC00B5FC47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE73EFED23B7E82F009773A2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		CEC2B60C23B93C7A009D75B9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		CED9EE5523B2AF6E0040A938 /* SlideStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideStepper.swift; sourceTree = "<group>"; };
+		CEC2B61023BA0E5A009D75B9 /* MetronomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomView.swift; sourceTree = "<group>"; };
+		CEC2B61223BA1ECC009D75B9 /* TaktLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaktLineView.swift; sourceTree = "<group>"; };
+		CED9EE5523B2AF6E0040A938 /* StepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
 		CED9EE5923B54A040040A938 /* SFProText-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Semibold.otf"; sourceTree = "<group>"; };
 		CED9EE5D23B54DD40040A938 /* SFProText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,7 +87,9 @@
 				C4588A1B23ABD7EC00B5FC47 /* LaunchScreen.storyboard */,
 				C4588A1E23ABD7EC00B5FC47 /* Info.plist */,
 				C4588A1623ABD7E700B5FC47 /* Metronom.xcdatamodeld */,
-				CED9EE5523B2AF6E0040A938 /* SlideStepper.swift */,
+				CED9EE5523B2AF6E0040A938 /* StepperView.swift */,
+				CEC2B61023BA0E5A009D75B9 /* MetronomView.swift */,
+				CEC2B61223BA1ECC009D75B9 /* TaktLineView.swift */,
 			);
 			path = Metronom;
 			sourceTree = "<group>";
@@ -255,8 +261,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4588A1223ABD7E700B5FC47 /* ViewController.swift in Sources */,
-				CED9EE5623B2AF6E0040A938 /* SlideStepper.swift in Sources */,
+				CEC2B61123BA0E5A009D75B9 /* MetronomView.swift in Sources */,
+				CED9EE5623B2AF6E0040A938 /* StepperView.swift in Sources */,
 				C4588A0E23ABD7E600B5FC47 /* AppDelegate.swift in Sources */,
+				CEC2B61323BA1ECC009D75B9 /* TaktLineView.swift in Sources */,
 				C4588A1823ABD7E700B5FC47 /* Metronom.xcdatamodeld in Sources */,
 				C4588A1023ABD7E600B5FC47 /* SceneDelegate.swift in Sources */,
 			);

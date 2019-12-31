@@ -9,11 +9,11 @@
 import UIKit
 
 @IBDesignable
-class SlideStepper: UIView {
+class StepperView: UIView {
     
-    private let upButton = SlideStepper.Button(direction: .up)
-    private let contentBox = SlideStepper.ContentBox()
-    private let downButton = SlideStepper.Button(direction: .down)
+    private let upButton = StepperView.Button(direction: .up)
+    private let contentBox = StepperView.ContentBox()
+    private let downButton = StepperView.Button(direction: .down)
     
     @IBInspectable
     var nameText: String = "" {
@@ -110,7 +110,7 @@ class SlideStepper: UIView {
         convenience init(direction: Direction) {
             self.init(frame: .zero)
             
-            let bundle = Bundle(for: SlideStepper.self)
+            let bundle = Bundle(for: StepperView.self)
             let loadedImage = UIImage(named: direction.rawValue, in: bundle, compatibleWith: nil)
             if let image = loadedImage {
                 setTitle(direction.rawValue, for: .normal)
