@@ -35,7 +35,7 @@ class StepperView: UIView {
     var downHandler: () -> Void = {}
     
     override open var intrinsicContentSize: CGSize {
-        return CGSize(width: 100, height: 142)
+        CGSize(width: 100, height: 142)
     }
     
     override init(frame: CGRect) {

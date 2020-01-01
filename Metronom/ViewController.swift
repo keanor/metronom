@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         get { Int(speedStepper.valueText)! }
         set {
             if (newValue >= 60 || newValue <= 200) {
+                metronomView.bpm = newValue
                 speedStepper.valueText = String(newValue)
             }
         }
@@ -43,6 +44,7 @@ class ViewController: UIViewController {
         
         speedStepper.upHandler = { self.bpm += 1 }
         speedStepper.downHandler = { self.bpm -= 1 }
+        bpm = 120
     }
     
     override func viewDidLayoutSubviews() {
