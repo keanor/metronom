@@ -38,6 +38,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        metronomView.translatesAutoresizingMaskIntoConstraints = false
  
         rhythmStepper.upHandler = { self.takts += 1 }
         rhythmStepper.downHandler = { self.takts -= 1 }
@@ -49,5 +50,28 @@ class ViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+
+        // Вычисляем Y для MetronomView
+        let minY = speedStepper.frame.maxY // выше этой точки подниматься нельзя
+        var mY = view.frame.midY // Берем центр экрана
+        mY -= TaktLineView.MAX_HEIGHT / 2 // Поднимаем на половину высоты черточек тактов
+        if (mY < minY) {
+            mY = minY
+        }
+
+        let padding: CGFloat = 40;
+        let w: CGFloat = view.frame.width - padding * 2 // отступы
+        let h: CGFloat = view.frame.height - mY - padding;
+
+        metronomView.frame = CGRect(
+            origin: CGPoint(
+                    x: 40,
+                    y: mY
+            ),
+            size: CGSize(
+                    width: w,
+                    height: h
+            )
+        )
     }
 }

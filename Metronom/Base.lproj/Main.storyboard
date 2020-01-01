@@ -39,21 +39,18 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="valueText" value="120"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2XX-jA-pQ7" customClass="MetronomView" customModule="Metronom" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2XX-jA-pQ7" customClass="MetronomView" customModule="Metronom" customModuleProvider="target">
                                 <rect key="frame" x="40" y="258" width="240" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="2XX-jA-pQ7" firstAttribute="top" secondItem="d3r-0f-PZd" secondAttribute="bottom" constant="100" id="03p-VY-Gu9"/>
                             <constraint firstAttribute="trailing" secondItem="sse-24-Dfs" secondAttribute="trailing" constant="40" id="0ii-Lq-OO3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2XX-jA-pQ7" secondAttribute="trailing" constant="40" id="70h-KZ-LL1"/>
                             <constraint firstItem="d3r-0f-PZd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="8Qg-Jw-0ux"/>
                             <constraint firstItem="d3r-0f-PZd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="AZE-Gw-mXX"/>
                             <constraint firstItem="sse-24-Dfs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="bNA-Z9-MK3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2XX-jA-pQ7" secondAttribute="bottom" constant="40" id="dB3-VC-ltM"/>
-                            <constraint firstItem="2XX-jA-pQ7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="uyO-g5-Iox"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
