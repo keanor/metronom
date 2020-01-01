@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 @IBDesignable
 class MetronomView: UIView {
+    let player = SoundPlayer()
+
     var taktCount: Int = 3 {
         didSet {
             createTaktViews()
@@ -82,6 +85,11 @@ class MetronomView: UIView {
             // если он включен то делаем его текущим
             current.state = .current
             lastCurrent = current
+            if (nextTakt == 0) {
+                player.playFirst()
+            } else {
+                player.playOther()
+            }
         }
         nextTakt += 1
 
@@ -90,6 +98,8 @@ class MetronomView: UIView {
             needReSchedule = false
         }
     }
+
+
     
     func setupViews() {
         mainButton.backgroundColor = UIColor(red: 0.365, green: 0.733, blue: 0.561, alpha: 1)
