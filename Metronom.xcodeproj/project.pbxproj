@@ -41,7 +41,7 @@
 		CE4E197023BCC1FA00639955 /* k1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = k1.wav; sourceTree = "<group>"; };
 		CE4E197123BCC1FA00639955 /* k2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = k2.wav; sourceTree = "<group>"; };
 		CE4E197723BD5ECF00639955 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
-		CE73EFED23B7E82F009773A2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		CE73EFED23B7E82F009773A2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CEC2B60C23B93C7A009D75B9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		CEC2B61023BA0E5A009D75B9 /* MetronomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomView.swift; sourceTree = "<group>"; };
 		CEC2B61223BA1ECC009D75B9 /* TaktLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaktLineView.swift; sourceTree = "<group>"; };
@@ -431,8 +431,9 @@
 			baseConfigurationReference = 76FCAD79901A334CA45AC80D /* Pods-Metronom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38FT6KHF3G;
 				INFOPLIST_FILE = Metronom/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -452,8 +453,9 @@
 			baseConfigurationReference = 23C18D29C4ACF639B0F64497 /* Pods-Metronom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38FT6KHF3G;
 				INFOPLIST_FILE = Metronom/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
