@@ -18,7 +18,7 @@ class StepperView: UIView {
     @IBInspectable
     var nameText: String = "" {
         didSet {
-            contentBox.nameLabel.text = nameText
+            contentBox.nameLabel.text = NSLocalizedString(nameText, comment: "")
             contentBox.setNeedsLayout()
         }
     }

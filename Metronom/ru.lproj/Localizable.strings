@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Metronom
+
+  Created by Александр Ширшов on 09.01.2020.
+  Copyright © 2020 Ширшов Александр. All rights reserved.
+*/
+"bundle.start" = "СТАРТ";
+"bundle.stop" = "СТОП";
+"bundle.bpm" = "СКОРОСТЬ";
+"bundle.beat" = "РИТМ";

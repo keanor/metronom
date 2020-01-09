@@ -12,6 +12,9 @@ import AVFoundation
 @IBDesignable
 class MetronomView: UIView {
     let player = SoundPlayer()
+    
+    var startText: String { NSLocalizedString("bundle.start", comment: "") }
+    var stopText: String { NSLocalizedString("bundle.stop", comment: "") }
 
     var taktCount: Int = 3 {
         didSet {
@@ -50,10 +53,10 @@ class MetronomView: UIView {
             nextTakt = 0
             isRunning = false
             lastCurrent?.state = .enabled
-            mainButton.setTitle("START", for: .normal)
+            mainButton.setTitle(startText, for: .normal)
         } else {
             schedule()
-            mainButton.setTitle("STOP", for: .normal)
+            mainButton.setTitle(stopText, for: .normal)
             isRunning = true
         }
     }
@@ -99,11 +102,9 @@ class MetronomView: UIView {
         }
     }
 
-
-    
     func setupViews() {
         mainButton.backgroundColor = UIColor(red: 0.365, green: 0.733, blue: 0.561, alpha: 1)
-        mainButton.setTitle("START", for: .normal)
+        mainButton.setTitle(startText, for: .normal)
         mainButton.addTarget(self, action: #selector(buttonHandle), for: .touchUpInside)
         addSubview(mainButton)
         

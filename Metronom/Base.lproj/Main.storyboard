@@ -23,7 +23,7 @@
                                     <constraint firstAttribute="width" constant="100" id="GI0-FB-aI5"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="nameText" value="РИТМ"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nameText" value="bundle.bpm"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="valueText" value="3/4"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -35,7 +35,7 @@
                                     <constraint firstAttribute="width" constant="100" id="PIM-91-TK6"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="nameText" value="СКОРОСТЬ"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nameText" value="bundle.beat"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="valueText" value="120"/>
                                 </userDefinedRuntimeAttributes>
                             </view>

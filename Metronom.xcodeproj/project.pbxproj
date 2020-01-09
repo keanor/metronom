@@ -21,6 +21,7 @@
 		CEC2B60D23B93C7A009D75B9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CEC2B60C23B93C7A009D75B9 /* .gitignore */; };
 		CEC2B61123BA0E5A009D75B9 /* MetronomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2B61023BA0E5A009D75B9 /* MetronomView.swift */; };
 		CEC2B61323BA1ECC009D75B9 /* TaktLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2B61223BA1ECC009D75B9 /* TaktLineView.swift */; };
+		CED9DD0423C7BCCE007941DE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CED9DD0623C7BCCE007941DE /* Localizable.strings */; };
 		CED9EE5623B2AF6E0040A938 /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED9EE5523B2AF6E0040A938 /* StepperView.swift */; };
 		CED9EE5B23B54A040040A938 /* SFProText-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CED9EE5923B54A040040A938 /* SFProText-Semibold.otf */; };
 		CED9EE5E23B54DD40040A938 /* SFProText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CED9EE5D23B54DD40040A938 /* SFProText-Medium.otf */; };
@@ -45,6 +46,8 @@
 		CEC2B60C23B93C7A009D75B9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		CEC2B61023BA0E5A009D75B9 /* MetronomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomView.swift; sourceTree = "<group>"; };
 		CEC2B61223BA1ECC009D75B9 /* TaktLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaktLineView.swift; sourceTree = "<group>"; };
+		CED9DD0523C7BCCE007941DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CED9DD0923C7BDAE007941DE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CED9EE5523B2AF6E0040A938 /* StepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
 		CED9EE5923B54A040040A938 /* SFProText-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Semibold.otf"; sourceTree = "<group>"; };
 		CED9EE5D23B54DD40040A938 /* SFProText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Medium.otf"; sourceTree = "<group>"; };
@@ -98,6 +101,7 @@
 				CEC2B61023BA0E5A009D75B9 /* MetronomView.swift */,
 				CEC2B61223BA1ECC009D75B9 /* TaktLineView.swift */,
 				CE4E197723BD5ECF00639955 /* SoundPlayer.swift */,
+				CED9DD0623C7BCCE007941DE /* Localizable.strings */,
 			);
 			path = Metronom;
 			sourceTree = "<group>";
@@ -181,6 +185,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = C4588A0123ABD7E600B5FC47;
 			productRefGroup = C4588A0B23ABD7E600B5FC47 /* Products */;
@@ -202,6 +207,7 @@
 				CED9EE5B23B54A040040A938 /* SFProText-Semibold.otf in Resources */,
 				C4588A1D23ABD7EC00B5FC47 /* LaunchScreen.storyboard in Resources */,
 				C4588A1A23ABD7EC00B5FC47 /* Assets.xcassets in Resources */,
+				CED9DD0423C7BCCE007941DE /* Localizable.strings in Resources */,
 				CED9EE5E23B54DD40040A938 /* SFProText-Medium.otf in Resources */,
 				CE4E197223BCC1FA00639955 /* k1.wav in Resources */,
 				C4588A1523ABD7E700B5FC47 /* Main.storyboard in Resources */,
@@ -309,6 +315,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		CED9DD0623C7BCCE007941DE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED9DD0523C7BCCE007941DE /* en */,
+				CED9DD0923C7BDAE007941DE /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -316,6 +331,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -376,6 +392,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
