@@ -51,27 +51,45 @@ class ViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
-        // Вычисляем Y для MetronomView
-        let minY = speedStepper.frame.maxY // выше этой точки подниматься нельзя
-        var mY = view.frame.midY // Берем центр экрана
-        mY -= TaktLineView.MAX_HEIGHT / 2 // Поднимаем на половину высоты черточек тактов
-        if (mY < minY) {
-            mY = minY
-        }
-
         let padding: CGFloat = 40;
-        let w: CGFloat = view.frame.width - padding * 2 // отступы
-        let h: CGFloat = view.frame.height - mY - padding;
 
-        metronomView.frame = CGRect(
-            origin: CGPoint(
-                    x: 40,
-                    y: mY
-            ),
-            size: CGSize(
-                    width: w,
-                    height: h
+        // если над кнопкой степперов нет, то поднимаем до начала степперов
+        let beatSize = rhythmStepper.frame
+        let bpmSize = speedStepper.frame
+        
+        let mtrSize = metronomView.frame
+        if mtrSize.minX > beatSize.maxX && mtrSize.maxX < bpmSize.minX {
+            metronomView.frame = CGRect(
+                origin: CGPoint(
+                    x: mtrSize.minX,
+                    y: padding
+                ), size: CGSize(
+                    width: mtrSize.width,
+                    height: mtrSize.maxY - padding
+                )
             )
-        )
+        } else {
+            // Вычисляем Y для MetronomView
+            let minY = speedStepper.frame.maxY // выше этой точки подниматься нельзя
+            var mY = view.frame.midY // Берем центр экрана
+            mY -= TaktLineView.MAX_HEIGHT / 2 // Поднимаем на половину высоты черточек тактов
+            if (mY < minY) {
+                mY = minY
+            }
+
+            let w: CGFloat = view.frame.width - padding * 2 // отступы
+            let h: CGFloat = view.frame.height - mY - padding;
+
+            metronomView.frame = CGRect(
+                origin: CGPoint(
+                        x: padding,
+                        y: mY
+                ),
+                size: CGSize(
+                        width: w,
+                        height: h
+                )
+            )
+        }
     }
 }
