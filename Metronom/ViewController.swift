@@ -27,10 +27,10 @@ class ViewController: UIViewController {
         }
     }
     var takts: Int {
-        get { metronomView.taktCount }
+        get { metronomView.beatCount }
         set {
             if (newValue >= 2 && newValue <= 8) {
-                metronomView.taktCount = newValue
+                metronomView.beatCount = newValue
                 rhythmStepper.valueText = String(newValue) + "/4"
             }
         }
@@ -72,7 +72,7 @@ class ViewController: UIViewController {
             // Вычисляем Y для MetronomView
             let minY = speedStepper.frame.maxY // выше этой точки подниматься нельзя
             var mY = view.frame.midY // Берем центр экрана
-            mY -= TaktLineView.MAX_HEIGHT / 2 // Поднимаем на половину высоты черточек тактов
+            mY -= BeatLineView.MAX_HEIGHT / 2 // Поднимаем на половину высоты черточек тактов
             if (mY < minY) {
                 mY = minY
             }

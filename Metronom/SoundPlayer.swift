@@ -8,45 +8,35 @@
 
 import Foundation
 import AVFoundation
+import ModernAVPlayer
 
 class SoundPlayer {
-    private var firstSound: AVAudioPlayer!
-    private var otherSound: AVAudioPlayer!
+    private var firstSound: ModernAVPlayer?
+    private var otherSound: ModernAVPlayer?
 
     init() {
         firstSound = loadPlayer(name: "k1.wav")
-        firstSound?.prepareToPlay()
         otherSound = loadPlayer(name: "k2.wav")
-        otherSound?.prepareToPlay()
     }
 
-    private func loadPlayer(name: String) -> AVAudioPlayer? {
-        let resource = Bundle.main.path(forResource: name, ofType: nil)
-        guard let file = resource else  {
-            print("Unable load resource: " + name)
-            return nil
-        }
+    private func loadPlayer(name: String) -> ModernAVPlayer {
+        let resource = Bundle.main.url(forResource: name, withExtension: nil)!
+        let media = ModernAVPlayerMedia(url: resource, type: .clip)
+        let player = ModernAVPlayer()
+        player.load(media: media, autostart: false)
 
-        do {
-            return try AVAudioPlayer(contentsOf: URL(fileURLWithPath: file))
-        } catch {
-            print("Unable create AVAudioPlayer: " + error.localizedDescription)
-            return nil
-        }
+        return player
     }
 
     func playFirst() {
-        play(player: firstSound!)
+        firstSound!.stop()
+        firstSound!.seek(offset: 0)
+        firstSound!.play()
     }
 
     func playOther() {
-        play(player: otherSound!)
-    }
-
-    private func play(player: AVAudioPlayer) {
-        if (player.isPlaying) {
-            player.stop()
-        }
-        player.play()
+        otherSound!.stop()
+        otherSound!.seek(offset: 0)
+        otherSound!.play()
     }
 }

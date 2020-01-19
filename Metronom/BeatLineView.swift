@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TaktLineView: UIView {
+class BeatLineView: UIView {
     public static let MAX_HEIGHT: CGFloat = 61;
     public static let HEIGHT: CGFloat = 57;
 
@@ -72,7 +72,7 @@ class TaktLineView: UIView {
     }
     
     private func setupDisabledLayer() {
-        disabledLayer.frame = CGRect(x: 6, y: 2, width: 8, height: TaktLineView.HEIGHT)
+        disabledLayer.frame = CGRect(x: 6, y: 2, width: 8, height: BeatLineView.HEIGHT)
         disabledLayer.backgroundColor = .white
         disabledLayer.layer.backgroundColor = UIColor(red: 0.817, green: 0.875, blue: 0.848, alpha: 1).cgColor
         disabledLayer.layer.cornerRadius = 4
@@ -81,7 +81,7 @@ class TaktLineView: UIView {
     }
     
     private func setupEnabledLayer() {
-        enabledLayer.frame = CGRect(x: 6, y: 2, width: 8, height: TaktLineView.HEIGHT)
+        enabledLayer.frame = CGRect(x: 6, y: 2, width: 8, height: BeatLineView.HEIGHT)
         enabledLayer.backgroundColor = .white
         
         let shadows = UIView()
@@ -106,7 +106,7 @@ class TaktLineView: UIView {
     }
     
     private func setupCurrentLayer() {
-        currentLayer.frame = CGRect(x: 4, y: 0, width: 12, height: TaktLineView.MAX_HEIGHT)
+        currentLayer.frame = CGRect(x: 4, y: 0, width: 12, height: BeatLineView.MAX_HEIGHT)
         currentLayer.backgroundColor = .white
         currentLayer.layer.cornerRadius = 6
         currentLayer.layer.borderWidth = 2

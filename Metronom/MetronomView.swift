@@ -16,13 +16,13 @@ class MetronomView: UIView {
     var startText: String { NSLocalizedString("bundle.start", comment: "") }
     var stopText: String { NSLocalizedString("bundle.stop", comment: "") }
 
-    var taktCount: Int = 3 {
+    var beatCount: Int = 3 {
         didSet {
-            createTaktViews()
+            createBeats()
         }
     }
     private let mainButton = UIButton()
-    private var taktViews = [TaktLineView]()
+    private var beats = [BeatLineView]()
     var bpm: Int = 60 {
         didSet {
             if (isRunning) {
@@ -34,8 +34,8 @@ class MetronomView: UIView {
     var timer = Timer()
     private var isRunning = false
     private var needReSchedule = false
-    private var nextTakt = 0;
-    private var lastCurrent: TaktLineView?;
+    private var nextBeatIndex = 0;
+    private var lastCurrent: BeatLineView?;
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -47,10 +47,11 @@ class MetronomView: UIView {
         setupViews()
     }
 
-    @objc func buttonHandle() {
+    @objc func buttonHandle(sender: UIButton!) {
+        print("Button pressed")
         if (isRunning) {
             timer.invalidate()
-            nextTakt = 0
+            nextBeatIndex = 0
             isRunning = false
             lastCurrent?.state = .enabled
             mainButton.setTitle(startText, for: .normal)
@@ -74,27 +75,25 @@ class MetronomView: UIView {
     }
 
     @objc private func nextTaktHandler() {
-        let lastTakt = taktViews.endIndex - 1
-        if (nextTakt > lastTakt) {
-            nextTakt = 0
-        }
-
         // Ищем предыдущий чтобы убрать у него active
         lastCurrent?.state = .enabled
 
         // Получаем следующий элемент
-        let current = taktViews[nextTakt]
+        let current = beats[nextBeatIndex]
         if (current.state == .enabled) {
             // если он включен то делаем его текущим
             current.state = .current
             lastCurrent = current
-            if (nextTakt == 0) {
+            if (nextBeatIndex == 0) {
                 player.playFirst()
             } else {
                 player.playOther()
             }
         }
-        nextTakt += 1
+        nextBeatIndex += 1
+        if (nextBeatIndex > beats.endIndex - 1) {
+            nextBeatIndex = 0
+        }
 
         if (needReSchedule) {
             schedule()
@@ -107,19 +106,19 @@ class MetronomView: UIView {
         mainButton.setTitle(startText, for: .normal)
         mainButton.addTarget(self, action: #selector(buttonHandle), for: .touchUpInside)
         addSubview(mainButton)
-        
-        createTaktViews()
+
+        createBeats()
     }
     
-    func createTaktViews() {
-        for view in taktViews {
+    func createBeats() {
+        for view in beats {
             view.removeFromSuperview()
         }
-        taktViews.removeAll()
-        for _ in 0...(taktCount - 1) {
-            let taktView = TaktLineView(state: .enabled);
-            addSubview(taktView)
-            taktViews.append(taktView)
+        beats.removeAll()
+        for _ in 0...(beatCount - 1) {
+            let beatView = BeatLineView(state: .enabled);
+            addSubview(beatView)
+            beats.append(beatView)
         }
     }
     
@@ -132,8 +131,8 @@ class MetronomView: UIView {
         let horda = frame.width
         
         var index = 0;
-        for view in taktViews {
-            view.layoutInParent(index: index, total: taktCount, horda: horda, radius: radius)
+        for view in beats {
+            view.layoutInParent(index: index, total: beatCount, horda: horda, radius: radius)
             index += 1
         }
     }

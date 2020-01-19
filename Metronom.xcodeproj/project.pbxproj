@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6926E3E5D38B8F79BBE62903 /* Pods_Metronom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8BB15571DD2602BDCE4E24 /* Pods_Metronom.framework */; };
 		C4588A0E23ABD7E600B5FC47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4588A0D23ABD7E600B5FC47 /* AppDelegate.swift */; };
 		C4588A1023ABD7E600B5FC47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4588A0F23ABD7E600B5FC47 /* SceneDelegate.swift */; };
 		C4588A1223ABD7E700B5FC47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4588A1123ABD7E600B5FC47 /* ViewController.swift */; };
@@ -20,7 +21,7 @@
 		CE73EFEE23B7E82F009773A2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CE73EFED23B7E82F009773A2 /* Podfile */; };
 		CEC2B60D23B93C7A009D75B9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CEC2B60C23B93C7A009D75B9 /* .gitignore */; };
 		CEC2B61123BA0E5A009D75B9 /* MetronomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2B61023BA0E5A009D75B9 /* MetronomView.swift */; };
-		CEC2B61323BA1ECC009D75B9 /* TaktLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2B61223BA1ECC009D75B9 /* TaktLineView.swift */; };
+		CEC2B61323BA1ECC009D75B9 /* BeatLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2B61223BA1ECC009D75B9 /* BeatLineView.swift */; };
 		CED9DD0423C7BCCE007941DE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CED9DD0623C7BCCE007941DE /* Localizable.strings */; };
 		CED9EE5623B2AF6E0040A938 /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED9EE5523B2AF6E0040A938 /* StepperView.swift */; };
 		CED9EE5B23B54A040040A938 /* SFProText-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CED9EE5923B54A040040A938 /* SFProText-Semibold.otf */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		23C18D29C4ACF639B0F64497 /* Pods-Metronom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metronom.release.xcconfig"; path = "Pods/Target Support Files/Pods-Metronom/Pods-Metronom.release.xcconfig"; sourceTree = "<group>"; };
+		2E8BB15571DD2602BDCE4E24 /* Pods_Metronom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Metronom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FCAD79901A334CA45AC80D /* Pods-Metronom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metronom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Metronom/Pods-Metronom.debug.xcconfig"; sourceTree = "<group>"; };
 		C4588A0A23ABD7E600B5FC47 /* Metronom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metronom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4588A0D23ABD7E600B5FC47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +47,7 @@
 		CE73EFED23B7E82F009773A2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CEC2B60C23B93C7A009D75B9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		CEC2B61023BA0E5A009D75B9 /* MetronomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomView.swift; sourceTree = "<group>"; };
-		CEC2B61223BA1ECC009D75B9 /* TaktLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaktLineView.swift; sourceTree = "<group>"; };
+		CEC2B61223BA1ECC009D75B9 /* BeatLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatLineView.swift; sourceTree = "<group>"; };
 		CED9DD0523C7BCCE007941DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CED9DD0923C7BDAE007941DE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CED9EE5523B2AF6E0040A938 /* StepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6926E3E5D38B8F79BBE62903 /* Pods_Metronom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +102,7 @@
 				C4588A1623ABD7E700B5FC47 /* Metronom.xcdatamodeld */,
 				CED9EE5523B2AF6E0040A938 /* StepperView.swift */,
 				CEC2B61023BA0E5A009D75B9 /* MetronomView.swift */,
-				CEC2B61223BA1ECC009D75B9 /* TaktLineView.swift */,
+				CEC2B61223BA1ECC009D75B9 /* BeatLineView.swift */,
 				CE4E197723BD5ECF00639955 /* SoundPlayer.swift */,
 				CED9DD0623C7BCCE007941DE /* Localizable.strings */,
 			);
@@ -136,6 +139,7 @@
 		FCD4A045D3728D95D477C704 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2E8BB15571DD2602BDCE4E24 /* Pods_Metronom.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -245,11 +249,14 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Metronom/Pods-Metronom-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ModernAVPlayer/ModernAVPlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ModernAVPlayer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -290,7 +297,7 @@
 				CE4E197823BD5ECF00639955 /* SoundPlayer.swift in Sources */,
 				CED9EE5623B2AF6E0040A938 /* StepperView.swift in Sources */,
 				C4588A0E23ABD7E600B5FC47 /* AppDelegate.swift in Sources */,
-				CEC2B61323BA1ECC009D75B9 /* TaktLineView.swift in Sources */,
+				CEC2B61323BA1ECC009D75B9 /* BeatLineView.swift in Sources */,
 				C4588A1823ABD7E700B5FC47 /* Metronom.xcdatamodeld in Sources */,
 				C4588A1023ABD7E600B5FC47 /* SceneDelegate.swift in Sources */,
 			);
