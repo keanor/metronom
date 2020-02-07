@@ -48,7 +48,6 @@ class MetronomView: UIView {
     }
 
     @objc func buttonHandle(sender: UIButton!) {
-        print("Button pressed")
         if (isRunning) {
             timer.invalidate()
             nextBeatIndex = 0
@@ -120,6 +119,7 @@ class MetronomView: UIView {
             addSubview(beatView)
             beats.append(beatView)
         }
+        bringSubviewToFront(mainButton)
     }
     
     override func layoutSubviews() {

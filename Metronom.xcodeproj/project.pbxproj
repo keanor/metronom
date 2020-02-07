@@ -156,7 +156,6 @@
 				C4588A0723ABD7E600B5FC47 /* Frameworks */,
 				C4588A0823ABD7E600B5FC47 /* Resources */,
 				A85D5D455B072FA13664E7FF /* [CP] Embed Pods Frameworks */,
-				78B25DD4FF04C105EC2D814F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,45 +221,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		78B25DD4FF04C105EC2D814F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Metronom/Pods-Metronom-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A85D5D455B072FA13664E7FF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Metronom/Pods-Metronom-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ModernAVPlayer/ModernAVPlayer.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Metronom/Pods-Metronom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ModernAVPlayer.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Metronom/Pods-Metronom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Metronom/Pods-Metronom-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Metronom/Pods-Metronom-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B39CCED6383E01DDFFB44592 /* [CP] Check Pods Manifest.lock */ = {
