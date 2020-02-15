@@ -15,12 +15,15 @@ class SoundPlayer {
     private var otherSound: ModernAVPlayer?
 
     init() {
-        firstSound = loadPlayer(name: "k1.wav")
-        otherSound = loadPlayer(name: "k2.wav")
+        firstSound = loadPlayer(name: "sounds/k1.wav")
+        otherSound = loadPlayer(name: "sounds/k2.wav")
     }
 
-    private func loadPlayer(name: String) -> ModernAVPlayer {
-        let resource = Bundle.main.url(forResource: name, withExtension: nil)!
+    private func loadPlayer(name: String) -> ModernAVPlayer? {
+        guard let resource = Bundle.main.url(forResource: name, withExtension: nil) else {
+            print("Unable load resource with name " + name)
+            return nil
+        }
         let media = ModernAVPlayerMedia(url: resource, type: .clip)
         let player = ModernAVPlayer()
         player.load(media: media, autostart: false)
